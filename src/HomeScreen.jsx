@@ -1,10 +1,11 @@
-import React from "react";
-import { SafeAreaView, StyleSheet, Platform, ScrollView } from "react-native";
-import Header from "./components/home/Header";
-import Stories from "./components/home/Stories";
-import Margin from "./components/Margin";
-import { POSTS } from "./data/Posts";
-import Post from "./components/home/Post";
+import React from 'react';
+import { SafeAreaView, StyleSheet, Platform, ScrollView } from 'react-native';
+import Header from './components/home/Header';
+import Stories from './components/home/Stories';
+import Margin from './components/Margin';
+import { POSTS } from './data/Posts';
+import Post from './components/home/Post';
+import BottomTabs from './components/BottomTabs';
 
 const HomeScreen = () => {
   return (
@@ -19,6 +20,7 @@ const HomeScreen = () => {
             <Post post={post} key={`post-${index}`} />
           ))}
         </ScrollView>
+        <BottomTabs />
       </SafeAreaView>
     </>
   );
@@ -26,9 +28,9 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#ffffff",
+    backgroundColor: '#ffffff',
     flex: 1,
-    paddingTop: Platform.OS === "android" ? 37 : 0,
+    paddingTop: Platform.OS === 'android' ? 37 : 0,
   },
 });
 

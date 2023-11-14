@@ -1,7 +1,7 @@
-import React from "react";
-import { View, Image, StyleSheet, TouchableOpacity, Text } from "react-native";
-import { FontAwesome } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
+import React from 'react';
+import { View, Image, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
       <TouchableOpacity>
         <Image
           style={styles.logo}
-          source={require("../../../assets/header_logo.png")}
+          source={require('../../../assets/header_logo.png')}
         />
       </TouchableOpacity>
 
@@ -18,7 +18,7 @@ const Header = () => {
           <Image
             style={styles.icon}
             source={{
-              uri: "https://img.icons8.com/ios/50/plus-2-math.png",
+              uri: 'https://img.icons8.com/ios/50/plus-2-math.png',
             }}
           />
         </TouchableOpacity>
@@ -26,7 +26,7 @@ const Header = () => {
           <Image
             style={styles.icon}
             source={{
-              uri: "https://img.icons8.com/ios/50/like--v1.png",
+              uri: 'https://img.icons8.com/ios/50/like--v1.png',
             }}
           />
         </TouchableOpacity>
@@ -37,7 +37,7 @@ const Header = () => {
           <Image
             style={styles.icon}
             source={{
-              uri: "https://img.icons8.com/ios/50/facebook-messenger--v1.png",
+              uri: 'https://img.icons8.com/ios/50/facebook-messenger--v1.png',
             }}
           />
         </TouchableOpacity>
@@ -48,17 +48,17 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   logo: {
     width: 100,
     height: 50,
-    resizeMode: "contain",
+    resizeMode: 'contain',
   },
   iconContainer: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   icon: {
     width: 30,
@@ -68,17 +68,17 @@ const styles = StyleSheet.create({
   unreadBadge: {
     width: 20,
     height: 20,
-    position: "absolute",
-    backgroundColor: "#ff3250",
+    position: 'absolute',
+    backgroundColor: '#ff3250',
     left: 25,
     bottom: 20,
     borderRadius: 10,
   },
   unreadBadgeText: {
-    color: "#ffffff",
+    color: '#ffffff',
     fontSize: 14,
-    fontWeight: "bold",
-    position: "absolute",
+    fontWeight: 'bold',
+    position: 'absolute',
   },
 });
 
