@@ -1,11 +1,11 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Platform, ScrollView } from 'react-native';
-import Header from './components/home/Header';
-import Stories from './components/home/Stories';
-import Margin from './components/Margin';
-import { POSTS } from './data/Posts';
-import Post from './components/home/Post';
-import BottomTabs from './components/BottomTabs';
+import Header from '../components/home/Header';
+import Stories from '../components/home/Stories';
+import Margin from '../components/Margin';
+import { POSTS } from '../data/Posts';
+import Post from '../components/home/Post';
+import BottomTabs from '../components/BottomTabs';
 
 const HomeScreen = () => {
   return (
