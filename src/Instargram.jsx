@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './screen/HomeScreen';
-import NewPostScreen from './screen/NewPostScreen';
+import SignedInStack from './screen/navigation';
+import BottomTab from './screen/tabNavigation';
 
 export default function Instargram() {
   return (
     <View style={styles.container}>
-      {/* <HomeScreen /> */}
-      <NewPostScreen />
+      <SignedInStack />
+      {/* <BottomTab /> */}
       <StatusBar style='auto' />
     </View>
   );

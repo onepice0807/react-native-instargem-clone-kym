@@ -7,11 +7,11 @@ import { POSTS } from '../data/Posts';
 import Post from '../components/home/Post';
 import BottomTabs from '../components/BottomTabs';
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <>
       <SafeAreaView style={styles.container}>
-        <Header />
+        <Header navigation={navigation} />
         <Margin hight={10} />
         <Stories />
         <Margin hight={10} />
@@ -20,7 +20,7 @@ const HomeScreen = () => {
             <Post post={post} key={`post-${index}`} />
           ))}
         </ScrollView>
-        <BottomTabs />
+        <BottomTabs navigation={navigation} />
       </SafeAreaView>
     </>
   );

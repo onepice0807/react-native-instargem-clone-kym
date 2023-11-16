@@ -18,7 +18,7 @@ export default class ImageSlider extends Component {
             console.warn(`image ${index} pressed`)
           }
           autoplay={true}
-          autoplayInterval={3500}
+          autoplayInterval={4500}
           circleLoop={true}
           dotColor='#FFEE58'
           inactiveDotColor='#90A4AE'

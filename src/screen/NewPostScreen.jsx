@@ -2,10 +2,10 @@ import React from 'react';
 import { Platform, SafeAreaView, StyleSheet, Text } from 'react-native';
 import AddNewPost from '../components/newpostscreen/AddNewPost';
 
-const NewPostScreen = () => {
+const NewPostScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <AddNewPost />
+      <AddNewPost navigation={navigation} />
     </SafeAreaView>
   );
 };
