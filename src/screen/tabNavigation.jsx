@@ -2,18 +2,11 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text } from 'react-native';
+import SignedInStack from './navigation';
+import SearchScreen from './SearchScreen';
 
 // 각 탭의 스크린 컴포넌트
-const HomeScreen = () => (
-  <View>
-    <Text>Home</Text>
-  </View>
-);
-const SearchScreen = () => (
-  <View>
-    <Text>Search</Text>
-  </View>
-);
+
 const ReelsScreen = () => (
   <View>
     <Text>Reels</Text>
@@ -32,12 +25,15 @@ const ProfileScreen = () => (
 
 const Tab = createBottomTabNavigator();
 
+const screenOptions = {
+  headerShown: false,
+};
 // 탭 네비게이터 컴포넌트
 const BottomTab = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name='Home' component={HomeScreen} />
+      <Tab.Navigator screenOptions={screenOptions}>
+        <Tab.Screen name='Home' component={SignedInStack} />
         <Tab.Screen name='Search' component={SearchScreen} />
         <Tab.Screen name='Reels' component={ReelsScreen} />
         <Tab.Screen name='Shop' component={ShopScreen} />

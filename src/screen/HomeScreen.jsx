@@ -5,7 +5,6 @@ import Stories from '../components/home/Stories';
 import Margin from '../components/Margin';
 import { POSTS } from '../data/Posts';
 import Post from '../components/home/Post';
-import BottomTabs from '../components/BottomTabs';
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -20,7 +19,6 @@ const HomeScreen = ({ navigation }) => {
             <Post post={post} key={`post-${index}`} />
           ))}
         </ScrollView>
-        <BottomTabs navigation={navigation} />
       </SafeAreaView>
     </>
   );
