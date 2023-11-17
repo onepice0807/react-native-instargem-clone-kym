@@ -8,12 +8,12 @@ const Stories = () => {
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {USERS.map((user, index) => {
           return (
-            <View style={styles.card}>
+            <View style={styles.card} key={`index-${index}`}>
               <Image source={{ uri: user.image }} style={styles.userProfile} />
               <Text style={styles.user}>
                 {user.user.length > 6
                   ? user.user.slice(0, 5).toLowerCase() + '...'
-                  : user.user.toLowerCase}
+                  : user.user.toLowerCase()}
               </Text>
             </View>
           );

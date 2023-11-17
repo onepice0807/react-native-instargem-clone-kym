@@ -11,9 +11,9 @@ const HomeScreen = ({ navigation }) => {
     <>
       <SafeAreaView style={styles.container}>
         <Header navigation={navigation} />
-        <Margin hight={10} />
+        <Margin height={10} />
         <Stories />
-        <Margin hight={10} />
+        <Margin height={10} />
         <ScrollView>
           {POSTS.map((post, index) => (
             <Post post={post} key={`post-${index}`} />
