@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { SliderBox } from 'react-native-image-slider-box';
+import { SliderBox } from '@ai-t/react-native-image-slider-box';
 
 export default class ImageSlider extends Component {
   constructor(props) {
